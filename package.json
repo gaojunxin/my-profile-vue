@@ -1,0 +1,40 @@
+{
+  "name": "my-profile-vue",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "author": {
+    "name": "gaojunxin",
+    "url": "https://github.com/gaojunxin",
+    "homepage": "https://www.gaojunxin.cn",
+    "email": "gjx.xin@qq.com"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build:github": "vite build --base=/my-profile"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@vueup/vue-quill": "^1.2.0",
+    "element-plus": "^2.6.2",
+    "lodash": "^4.17.21",
+    "moment": "^2.30.1",
+    "pinia": "^2.1.7",
+    "sortablejs": "^1.15.2",
+    "uuid": "^9.0.1",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@iconify-json/ep": "^1.1.15",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "unocss": "^0.58.6",
+    "unplugin-auto-import": "^0.17.5",
+    "unplugin-icons": "^0.18.5",
+    "unplugin-vue-components": "^0.26.0",
+    "vite": "^5.1.6",
+    "vite-plugin-svg-icons": "^2.0.1"
+  }
+}
