@@ -24,8 +24,6 @@
           </router-link>
           <el-button class="head-toolbar" type="success" link tag="a" href="https://www.gaojunxin.cn"
             target="_blank">我的博客：www.gaojunxin.cn</el-button>
-          <el-button class="head-toolbar" type="success" link tag="a" href="https://github.com/gaojunxin"
-            target="_blank">源码地址</el-button>
         </header>
         <div class="basic-info section" id="basic-info">
           <h5>基本信息</h5>
@@ -129,8 +127,7 @@
           <p v-if="config[item.type]"> {{ config[item.type] }} </p>
           <TagSectionEditor v-if="item.tagStyle" :items="item.data" :type="item.type"
             @add="(item) => addSectionItem(index, item)" @update="(data) => dataState.sections[index].data = data" />
-          <OnlyDescSectionEditor v-else-if="item.onlyDesc"
-            @update="(data) => dataState.sections[index].data = [data]" />
+          <OnlyDescSectionEditor v-else-if="item.onlyDesc" @update="(data) => dataState.sections[index].data = [data]" />
           <SectionEditor v-else :items="item.data" :type="item.type" @add="(item) => addSectionItem(index, item)"
             @update="(data) => dataState.sections[index].data = data" />
         </div>
@@ -138,6 +135,12 @@
       </el-col>
       <el-col :xs="24" :md="12" class="pl-4 pr-4 preview-area hidden-sm-and-down">
         <div class="resume-container">
+          <div class="right-top-menus">
+            <a href="https://github.com/gaojunxin/my-profile-vue" target="_blank">
+              <svg-icon name="github" className="github-icon" />
+            </a>
+          </div>
+
           <ResumeStandard :data="dataState" />
         </div>
       </el-col>
@@ -469,6 +472,18 @@ const config = {
 .basic-info-form .el-form-item .el-date-editor.el-input,
 .basic-info-form .el-form-item .el-date-editor.el-input__wrapper {
   width: 100%;
+}
+
+.right-top-menus {
+  position: fixed;
+  top: 10px;
+  right: 50px;
+}
+
+.github-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: black;
 }
 </style>
 <style>

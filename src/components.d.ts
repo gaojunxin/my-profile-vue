@@ -29,6 +29,8 @@ declare module 'vue' {
     IEpArrowDown: typeof import('~icons/ep/arrow-down')['default']
     IEpDelete: typeof import('~icons/ep/delete')['default']
     IEpEdit: typeof import('~icons/ep/edit')['default']
+    IEpGithub: typeof import('~icons/ep/github')['default']
+    IEpGithubIcon: typeof import('~icons/ep/github-icon')['default']
     IEpPlus: typeof import('~icons/ep/plus')['default']
     NormalContent: typeof import('./components/NormalContent.vue')['default']
     OnlyDescSectionEditor: typeof import('./components/OnlyDescSectionEditor.vue')['default']
